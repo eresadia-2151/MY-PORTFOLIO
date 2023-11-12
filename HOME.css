@@ -1,0 +1,136 @@
+
+*{
+    
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+    font-family: 'Lucida Handwriting', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    color:blueviolet;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color:aqua;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color:aqua;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: blueviolet;
+}
+
+.HOME{
+    height: 100vh;
+    background: url('Doha-City-4K-Wallpaper-3840x2160.jpg')no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.HOME-CONTENT{
+    max-width: 650px;
+    background-color: #000000b3;
+}
+
+ .HOME-CONTENT h1{
+    position: relative;
+    font-size: 35px;
+    font-weight: 700;
+    color:aqua;
+    line-height: 1,2;
+ }   
+ .HOME-CONTENT h1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+ }
+ .HOME-CONTENT h3{
+    font-size: 25px;
+    font-weight: 700;
+    color:aqua;
+ }
+ .HOME-CONTENT p{
+    font-size: 18px;
+    color:aqua;
+ }
+ .HOME-ICONS{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+ } 
+ .HOME-ICONS a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid aqua;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+ }  
+ .image img{
+    position: relative;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    right: -40%;
+ }
+/*KEYFRAMES ANIMATION*/
+@keyframes showRight  {
+    100% {
+        width: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,167 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Handwriting', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.CONTACT{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('Doha-City-4K-Wallpaper-3840x2160.jpg')no-repeat;
+    background-size:auto;
+}
+.CONTACT .content{
+    max-width: 800px;
+    text-align: center;
+}
+.CONTACT .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: aqua;
+}
+.CONTACT .content p{
+    font-size: 20px;
+    font-weight: 300;
+    color: aqua;
+}
+.Container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+ }
+ 
+.content p{
+    font-size: 18px;
+    color:aqua;
+ }
+ .content h2{
+    color:aqua;
+ }
+ 
+.Container .CONTACTINFO{
+    width: 100dvw;
+    display: flex;
+    flex-direction: column;
+}
+.Container .CONTACTINFO .BOX{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.Container .CONTACTINFO .BOX .ICON{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.Container .CONTACTINFO .BOX .TEXT{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.Container .CONTACTINFO .BOX .TEXT h3{
+    font-weight: 500;
+    color: aqua;
+}
+.CONTACTFORM{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.CONTACTFORM h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.CONTACTFORM .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.CONTACTFORM .inputBox input,
+.CONTACTFORM .inputBox textarea
+{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+.CONTACTFORM .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: 0;
+    transition: 0.5s;
+    color: #666;
+}
+.CONTACTFORM .inputBox input:focus ~ span,
+.CONTACTFORM .inputBox input:valid ~ span,
+.CONTACTFORM .inputBox textarea:focus ~ span,
+.CONTACTFORM .inputBox textarea:valid ~ span{
+    color:blueviolet;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.CONTACTFORM .inputBox input[type="submit"]{
+    width: 100px;
+    background: blueviolet;
+    color:black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px ;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color:aqua;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 18px;
+    color:aqua;
+    text-decoration: none;
+    font-weight: 400;
+    margin-left: 100px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: blueviolet;
+}
